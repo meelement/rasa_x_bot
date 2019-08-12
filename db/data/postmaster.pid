@@ -1,0 +1,8 @@
+1
+/bitnami/postgresql/data
+1565588359
+5432
+/tmp
+*
+  5432001         0
+ready   

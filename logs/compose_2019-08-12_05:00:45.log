@@ -1,0 +1,835 @@
+Attaching to rasa_logger_1, rasa_nginx_1, rasa_rasa-production_1, rasa_rasa-worker_1, rasa_rasa-x_1, rasa_app_1, rasa_db_1, rasa_duckling_1, rasa_rabbit_1
+nginx_1            |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+nginx_1            |                                  Dload  Upload   Total   Spent    Left  Speed
+nginx_1            |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to app port 80: Connection refused
+nginx_1            | 7
+nginx_1            | >> exec docker CMD
+nginx_1            | nginx
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: using the "epoll" event method
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: nginx/1.14.2
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: built by gcc 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) 
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: OS: Linux 4.15.0-1044-aws
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: start worker processes
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: start worker process 9
+nginx_1            | 2019/08/12 05:00:44 [notice] 1#0: start worker process 10
+rasa-x_1           | [93mVersion of model 20190808-122254.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190809-042548.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-125911.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-121820.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-125224.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+app_1              | 2019-08-12 05:00:27 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | 2019-08-12 05:00:27 INFO     rasa_sdk.executor  - Registered function for 'action_joke'.
+app_1              | 2019-08-12 05:00:28 INFO     rasa_sdk.endpoint  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+db_1               | [0m
+db_1               | [0m[1mWelcome to the Bitnami postgresql container[0m
+db_1               | [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-postgresql[0m
+db_1               | [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-postgresql/issues[0m
+db_1               | [0mSend us your feedback at [1mcontainers@bitnami.com[0m
+db_1               | [0m
+db_1               | [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
+db_1               | [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
+db_1               | [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
+db_1               | [0m[38;5;2mINFO [0m ==> postgresql.conf file not detected. Generating it...
+db_1               | [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
+db_1               | [0m[38;5;2mINFO [0m ==> Deploying PostgreSQL with persisted data...
+db_1               | [0m[38;5;2mINFO [0m ==> Configuring replication parameters
+db_1               | [0m[38;5;2mINFO [0m ==> Loading custom scripts...
+db_1               | [0m[38;5;2mINFO [0m ==> Enabling remote connections
+db_1               | [0m[38;5;2mINFO [0m ==> Stopping PostgreSQL...
+db_1               | [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
+db_1               | 
+db_1               | [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
+db_1               | 2019-08-12 05:00:29.761 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1               | 2019-08-12 05:00:29.761 GMT [1] LOG:  listening on IPv6 address "::", port 5432
+db_1               | 2019-08-12 05:00:29.773 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+db_1               | 2019-08-12 05:00:29.809 GMT [141] LOG:  database system was shut down at 2019-08-12 05:00:09 GMT
+db_1               | 2019-08-12 05:00:29.823 GMT [1] LOG:  database system is ready to accept connections
+duckling_1         | no port specified, defaulting to port 8000
+duckling_1         | Listening on http://0.0.0.0:8000
+rabbit_1           | [0m
+rabbit_1           | [0m[1mWelcome to the Bitnami rabbitmq container[0m
+rabbit_1           | [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq[0m
+rabbit_1           | [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq/issues[0m
+rabbit_1           | [0mSend us your feedback at [1mcontainers@bitnami.com[0m
+rabbit_1           | [0m
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ setup **
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Validating settings in RABBITMQ_* env vars..
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Initializing RabbitMQ...
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Generating random cookie
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Starting RabbitMQ in background...
+rabbit_1           | Waiting for erlang distribution on node 'rabbit@localhost' while OS process '31' is running
+rabbit_1           | Waiting for applications 'rabbit_and_plugins' to start on node 'rabbit@localhost'
+rabbit_1           | Applications 'rabbit_and_plugins' are running on node 'rabbit@localhost'
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Stopping RabbitMQ...
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** RabbitMQ setup finished! **
+rabbit_1           | 
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ **
+rabbit_1           | 2019-08-12 05:00:57.850 [info] <0.314.0> 
+rabbit_1           |  Starting RabbitMQ 3.7.15 on Erlang 22.0
+rabbit_1           |  Copyright (C) 2007-2019 Pivotal Software, Inc.
+rabbit_1           |  Licensed under the MPL.  See https://www.rabbitmq.com/
+rabbit_1           | 
+rabbit_1           |   ##  ##
+rabbit_1           |   ##  ##      RabbitMQ 3.7.15. Copyright (C) 2007-2019 Pivotal Software, Inc.
+rabbit_1           |   ##########  Licensed under the MPL.  See https://www.rabbitmq.com/
+rabbit_1           |   ######  ##
+rabbit_1           |   ##########  Logs: <stdout>
+rabbit_1           | 
+rabbit_1           |               Starting broker...
+rabbit_1           | 2019-08-12 05:00:57.852 [info] <0.314.0> 
+rabbit_1           |  node           : rabbit@localhost
+rabbit_1           |  home dir       : /opt/bitnami/rabbitmq/.rabbitmq
+rabbit_1           |  config file(s) : /opt/bitnami/rabbitmq/etc/rabbitmq/rabbitmq.config
+rabbit_1           |  cookie hash    : V4u3S8li4oazVrRHrdljIw==
+rabbit_1           |  log(s)         : <stdout>
+rabbit_1           |  database dir   : /bitnami/rabbitmq/mnesia/rabbit@localhost
+rabbit_1           | 2019-08-12 05:00:58.987 [info] <0.314.0> Running boot step pre_boot defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:58.987 [info] <0.314.0> Running boot step rabbit_core_metrics defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:58.989 [info] <0.314.0> Running boot step rabbit_alarm defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:58.993 [info] <0.322.0> Memory high watermark set to 3190 MiB (3345175347 bytes) of 7975 MiB (8362938368 bytes) total
+rabbit_1           | 2019-08-12 05:00:59.022 [info] <0.324.0> Enabling free disk space monitoring
+rabbit_1           | 2019-08-12 05:00:59.023 [info] <0.324.0> Disk free limit set to 836MB
+rabbit_1           | 2019-08-12 05:00:59.026 [info] <0.314.0> Running boot step code_server_cache defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.026 [info] <0.314.0> Running boot step file_handle_cache defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.027 [info] <0.327.0> Limiting to approx 1048476 file handles (943626 sockets)
+rabbit_1           | 2019-08-12 05:00:59.027 [info] <0.328.0> FHC read buffering:  OFF
+rabbit_1           | 2019-08-12 05:00:59.027 [info] <0.328.0> FHC write buffering: ON
+rabbit_1           | 2019-08-12 05:00:59.029 [info] <0.314.0> Running boot step worker_pool defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.029 [info] <0.314.0> Running boot step database defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.030 [info] <0.314.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbit_1           | 2019-08-12 05:00:59.113 [info] <0.314.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbit_1           | 2019-08-12 05:00:59.113 [info] <0.314.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+rabbit_1           | 2019-08-12 05:00:59.113 [info] <0.314.0> Running boot step database_sync defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step codec_correctness_check defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step external_infrastructure defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step rabbit_registry defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step rabbit_queue_location_random defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step rabbit_event defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.114 [info] <0.314.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_priority_queue defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Priority queues enabled, real BQ is rabbit_variable_queue
+rabbit_1           | 2019-08-12 05:00:59.115 [info] <0.314.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.116 [info] <0.314.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.116 [info] <0.314.0> Running boot step kernel_ready defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.116 [info] <0.314.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.116 [info] <0.314.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.121 [info] <0.314.0> Running boot step guid_generator defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.138 [info] <0.314.0> Running boot step rabbit_node_monitor defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.139 [info] <0.352.0> Starting rabbit_node_monitor
+rabbit_1           | 2019-08-12 05:00:59.139 [info] <0.314.0> Running boot step delegate_sup defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.140 [info] <0.314.0> Running boot step rabbit_memory_monitor defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.140 [info] <0.314.0> Running boot step core_initialized defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.140 [info] <0.314.0> Running boot step upgrade_queues defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.166 [info] <0.314.0> Running boot step rabbit_connection_tracking defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.166 [info] <0.314.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.166 [info] <0.314.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.167 [info] <0.314.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.167 [info] <0.314.0> Running boot step rabbit_policies defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.168 [info] <0.314.0> Running boot step rabbit_policy defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.168 [info] <0.314.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.168 [info] <0.314.0> Running boot step rabbit_vhost_limit defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.168 [info] <0.314.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+rabbit_1           | 2019-08-12 05:00:59.168 [info] <0.314.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+rabbit_1           | 2019-08-12 05:00:59.168 [info] <0.314.0> Management plugin: using rates mode 'basic'
+rabbit_1           | 2019-08-12 05:00:59.169 [info] <0.314.0> Running boot step recovery defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.170 [info] <0.385.0> Making sure data directory '/bitnami/rabbitmq/mnesia/rabbit@localhost/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+rabbit_1           | 2019-08-12 05:00:59.206 [info] <0.385.0> Starting message stores for vhost '/'
+rabbit_1           | 2019-08-12 05:00:59.206 [info] <0.389.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+rabbit_1           | 2019-08-12 05:00:59.209 [info] <0.385.0> Started message store of type transient for vhost '/'
+rabbit_1           | 2019-08-12 05:00:59.209 [info] <0.392.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+rabbit_1           | 2019-08-12 05:00:59.211 [info] <0.385.0> Started message store of type persistent for vhost '/'
+rabbit_1           | 2019-08-12 05:00:59.213 [info] <0.314.0> Running boot step load_definitions defined by app rabbitmq_management
+rabbit_1           | 2019-08-12 05:00:59.213 [info] <0.314.0> Running boot step empty_db_check defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.214 [info] <0.314.0> Running boot step rabbit_looking_glass defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.214 [info] <0.314.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.214 [info] <0.314.0> Running boot step background_gc defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.214 [info] <0.314.0> Running boot step connection_tracking defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.215 [info] <0.314.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@localhost
+rabbit_1           | 2019-08-12 05:00:59.215 [info] <0.314.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@localhost
+rabbit_1           | 2019-08-12 05:00:59.215 [info] <0.314.0> Running boot step routing_ready defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.215 [info] <0.314.0> Running boot step pre_flight defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.215 [info] <0.314.0> Running boot step notify_cluster defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.215 [info] <0.314.0> Running boot step networking defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.221 [warning] <0.415.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+rabbit_1           | 2019-08-12 05:00:59.221 [info] <0.429.0> started TCP listener on [::]:5672
+rabbit_1           | 2019-08-12 05:00:59.222 [info] <0.314.0> Running boot step direct_client defined by app rabbit
+rabbit_1           | 2019-08-12 05:00:59.253 [info] <0.479.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+rabbit_1           | 2019-08-12 05:00:59.253 [info] <0.585.0> Statistics database started.
+rabbit_1           | 2019-08-12 05:00:59.383 [info] <0.8.0> Server startup complete; 3 plugins started.
+rabbit_1           |  * rabbitmq_management
+rabbit_1           |  * rabbitmq_web_dispatch
+rabbit_1           |  * rabbitmq_management_agent
+rabbit_1           |  completed with 3 plugins.
+rabbit_1           | 2019-08-12 05:01:03.445 [info] <0.595.0> accepting AMQP connection <0.595.0> (172.27.0.7:39240 -> 172.27.0.3:5672)
+rabbit_1           | 2019-08-12 05:01:03.449 [info] <0.595.0> connection <0.595.0> (172.27.0.7:39240 -> 172.27.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 216, in _request_wrapper
+rasa-production_1  |     message = self._parse(resp.data)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 174, in _parse
+rasa-production_1  |     raise RetryAfter(retry_after)
+rasa-production_1  | telegram.error.RetryAfter: Flood control exceeded. Retry in 1 seconds
+rasa_rasa-production_1 exited with code 0
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa-production_1  | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-production_1  | Traceback (most recent call last):
+rasa-production_1  |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-production_1  |     sys.exit(main())
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-production_1  |     cmdline_arguments.func(cmdline_arguments)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-production_1  |     run_in_production(args)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-production_1  |     _rasa_service(args, endpoints)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-production_1  |     jwt_method=args.jwt_method,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-production_1  |     log_file=log_file,
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-production_1  |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-production_1  |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-production_1  |     out_channel.setWebhook(self.webhook_url)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-production_1  |     result = func(self, *args, **kwargs)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-production_1  |     result = self._request.post(url_, data, timeout=timeout)
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-production_1  |     headers={'Content-Type': 'application/json'})
+rasa-production_1  |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-production_1  |     raise BadRequest(message)
+rasa-production_1  | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-production_1 exited with code 1
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 223, in _request_wrapper
+rasa-worker_1      |     raise BadRequest(message)
+rasa-worker_1      | telegram.error.BadRequest: Bad webhook: https url must be provided for webhook
+rasa_rasa-worker_1 exited with code 1
+rasa_rasa-worker_1 exited with code 1

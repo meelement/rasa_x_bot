@@ -1,0 +1,6 @@
+version: '3.4'
+services:
+          app:
+                      image: rasa/rasa-sdk:latest
+                      volumes:
+                                        - ./actions:/app/actions

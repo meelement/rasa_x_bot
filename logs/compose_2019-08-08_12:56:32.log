@@ -1,0 +1,1173 @@
+Attaching to rasa_logger_1, rasa_nginx_1, rasa_app_1, rasa_rasa-production_1, rasa_rasa-worker_1, rasa_rasa-x_1, rasa_duckling_1, rasa_rabbit_1, rasa_db_1
+nginx_1            | SSL encryption is not used since no certificates were provided.
+app_1              | 2019-08-08 12:56:29 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+app_1              | 2019-08-08 12:56:32 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+nginx_1            |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+nginx_1            |                                  Dload  Upload   Total   Spent    Left  Speed
+nginx_1            |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to app port 80: Connection refused
+nginx_1            | 7
+nginx_1            | >> exec docker CMD
+nginx_1            | nginx
+nginx_1            | 2019/08/08 12:56:32 [emerg] 1#0: host not found in upstream "app:5055" in /opt/bitnami/nginx/conf/conf.d/rasax.nginx:10
+nginx_1            | nginx: [emerg] host not found in upstream "app:5055" in /opt/bitnami/nginx/conf/conf.d/rasax.nginx:10
+nginx_1            | SSL encryption is not used since no certificates were provided.
+nginx_1            |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+nginx_1            |                                  Dload  Upload   Total   Spent    Left  Speed
+nginx_1            | 7
+nginx_1            |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to app port 80: Connection refused
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa-x_1           | [93mVersion of model 20190808-122254.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-121820.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-125224.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+duckling_1         | no port specified, defaulting to port 8000
+duckling_1         | Listening on http://0.0.0.0:8000
+rabbit_1           | [0m
+rabbit_1           | [0m[1mWelcome to the Bitnami rabbitmq container[0m
+rabbit_1           | [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq[0m
+rabbit_1           | [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq/issues[0m
+rabbit_1           | [0mSend us your feedback at [1mcontainers@bitnami.com[0m
+rabbit_1           | [0m
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ setup **
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Validating settings in RABBITMQ_* env vars..
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Initializing RabbitMQ...
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Generating random cookie
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Starting RabbitMQ in background...
+rabbit_1           | Waiting for erlang distribution on node 'rabbit@localhost' while OS process '31' is running
+rabbit_1           | Waiting for applications 'rabbit_and_plugins' to start on node 'rabbit@localhost'
+rabbit_1           | Applications 'rabbit_and_plugins' are running on node 'rabbit@localhost'
+db_1               | [0m
+db_1               | [0m[1mWelcome to the Bitnami postgresql container[0m
+db_1               | [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-postgresql[0m
+db_1               | [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-postgresql/issues[0m
+db_1               | [0mSend us your feedback at [1mcontainers@bitnami.com[0m
+db_1               | [0m
+db_1               | [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
+db_1               | [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
+db_1               | [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
+db_1               | [0m[38;5;2mINFO [0m ==> postgresql.conf file not detected. Generating it...
+db_1               | [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
+db_1               | [0m[38;5;2mINFO [0m ==> Deploying PostgreSQL with persisted data...
+db_1               | [0m[38;5;2mINFO [0m ==> Configuring replication parameters
+db_1               | [0m[38;5;2mINFO [0m ==> Loading custom scripts...
+db_1               | [0m[38;5;2mINFO [0m ==> Enabling remote connections
+db_1               | [0m[38;5;2mINFO [0m ==> Stopping PostgreSQL...
+db_1               | [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
+db_1               | 
+db_1               | [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
+db_1               | 2019-08-08 12:56:18.982 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1               | 2019-08-08 12:56:18.982 GMT [1] LOG:  listening on IPv6 address "::", port 5432
+db_1               | 2019-08-08 12:56:19.001 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+db_1               | 2019-08-08 12:56:19.030 GMT [141] LOG:  database system was shut down at 2019-08-08 12:55:55 GMT
+db_1               | 2019-08-08 12:56:19.043 GMT [1] LOG:  database system is ready to accept connections
+db_1               | 2019-08-08 12:56:32.053 GMT [149] WARNING:  there is no transaction in progress
+app_1              | 2019-08-08 12:56:35 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+db_1               | 2019-08-08 12:56:35.699 GMT [153] WARNING:  there is no transaction in progress
+nginx_1            | >> exec docker CMD
+nginx_1            | nginx
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: using the "epoll" event method
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: nginx/1.14.2
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: built by gcc 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) 
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: OS: Linux 4.15.0-1044-aws
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: start worker processes
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: start worker process 10
+nginx_1            | 2019/08/08 12:56:36 [notice] 1#0: start worker process 11
+app_1              | 2019-08-08 12:56:37 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Stopping RabbitMQ...
+app_1              | 2019-08-08 12:56:40 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+app_1              | 2019-08-08 12:56:43 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** RabbitMQ setup finished! **
+rabbit_1           | 
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ **
+app_1              | 2019-08-08 12:56:48 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+rabbit_1           | 2019-08-08 12:56:48.849 [info] <0.308.0> 
+rabbit_1           |  Starting RabbitMQ 3.7.15 on Erlang 22.0
+rabbit_1           |  Copyright (C) 2007-2019 Pivotal Software, Inc.
+rabbit_1           |  Licensed under the MPL.  See https://www.rabbitmq.com/
+rabbit_1           | 
+rabbit_1           |   ##  ##
+rabbit_1           |   ##  ##      RabbitMQ 3.7.15. Copyright (C) 2007-2019 Pivotal Software, Inc.
+rabbit_1           |   ##########  Licensed under the MPL.  See https://www.rabbitmq.com/
+rabbit_1           |   ######  ##
+rabbit_1           |   ##########  Logs: <stdout>
+rabbit_1           | 
+rabbit_1           |               Starting broker...
+rabbit_1           | 2019-08-08 12:56:48.851 [info] <0.308.0> 
+rabbit_1           |  node           : rabbit@localhost
+rabbit_1           |  home dir       : /opt/bitnami/rabbitmq/.rabbitmq
+rabbit_1           |  config file(s) : /opt/bitnami/rabbitmq/etc/rabbitmq/rabbitmq.config
+rabbit_1           |  cookie hash    : d6kZvI14QbwRydgzLstqtw==
+rabbit_1           |  log(s)         : <stdout>
+rabbit_1           |  database dir   : /bitnami/rabbitmq/mnesia/rabbit@localhost
+rabbit_1           | 2019-08-08 12:56:49.847 [info] <0.308.0> Running boot step pre_boot defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.847 [info] <0.308.0> Running boot step rabbit_core_metrics defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.848 [info] <0.308.0> Running boot step rabbit_alarm defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.852 [info] <0.316.0> Memory high watermark set to 3190 MiB (3345175347 bytes) of 7975 MiB (8362938368 bytes) total
+rabbit_1           | 2019-08-08 12:56:49.855 [info] <0.318.0> Enabling free disk space monitoring
+rabbit_1           | 2019-08-08 12:56:49.856 [info] <0.318.0> Disk free limit set to 836MB
+rabbit_1           | 2019-08-08 12:56:49.859 [info] <0.308.0> Running boot step code_server_cache defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.859 [info] <0.308.0> Running boot step file_handle_cache defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.860 [info] <0.321.0> Limiting to approx 1048476 file handles (943626 sockets)
+rabbit_1           | 2019-08-08 12:56:49.860 [info] <0.322.0> FHC read buffering:  OFF
+rabbit_1           | 2019-08-08 12:56:49.860 [info] <0.322.0> FHC write buffering: ON
+rabbit_1           | 2019-08-08 12:56:49.861 [info] <0.308.0> Running boot step worker_pool defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.861 [info] <0.308.0> Running boot step database defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.863 [info] <0.308.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Running boot step database_sync defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Running boot step codec_correctness_check defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Running boot step external_infrastructure defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Running boot step rabbit_registry defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.911 [info] <0.308.0> Running boot step rabbit_queue_location_random defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.912 [info] <0.308.0> Running boot step rabbit_event defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.912 [info] <0.308.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.912 [info] <0.308.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.912 [info] <0.308.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.912 [info] <0.308.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.912 [info] <0.308.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_priority_queue defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Priority queues enabled, real BQ is rabbit_variable_queue
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step kernel_ready defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.913 [info] <0.308.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.917 [info] <0.308.0> Running boot step guid_generator defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.919 [info] <0.308.0> Running boot step rabbit_node_monitor defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.920 [info] <0.346.0> Starting rabbit_node_monitor
+rabbit_1           | 2019-08-08 12:56:49.920 [info] <0.308.0> Running boot step delegate_sup defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.921 [info] <0.308.0> Running boot step rabbit_memory_monitor defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.921 [info] <0.308.0> Running boot step core_initialized defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.921 [info] <0.308.0> Running boot step upgrade_queues defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.946 [info] <0.308.0> Running boot step rabbit_connection_tracking defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.946 [info] <0.308.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.946 [info] <0.308.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.947 [info] <0.308.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.947 [info] <0.308.0> Running boot step rabbit_policies defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.948 [info] <0.308.0> Running boot step rabbit_policy defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.948 [info] <0.308.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.948 [info] <0.308.0> Running boot step rabbit_vhost_limit defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.949 [info] <0.308.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+rabbit_1           | 2019-08-08 12:56:49.949 [info] <0.308.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+rabbit_1           | 2019-08-08 12:56:49.949 [info] <0.308.0> Management plugin: using rates mode 'basic'
+rabbit_1           | 2019-08-08 12:56:49.949 [info] <0.308.0> Running boot step recovery defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.951 [info] <0.379.0> Making sure data directory '/bitnami/rabbitmq/mnesia/rabbit@localhost/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+rabbit_1           | 2019-08-08 12:56:49.955 [info] <0.379.0> Starting message stores for vhost '/'
+rabbit_1           | 2019-08-08 12:56:49.955 [info] <0.383.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+rabbit_1           | 2019-08-08 12:56:49.957 [info] <0.379.0> Started message store of type transient for vhost '/'
+rabbit_1           | 2019-08-08 12:56:49.957 [info] <0.386.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+rabbit_1           | 2019-08-08 12:56:49.960 [info] <0.379.0> Started message store of type persistent for vhost '/'
+rabbit_1           | 2019-08-08 12:56:49.962 [info] <0.308.0> Running boot step load_definitions defined by app rabbitmq_management
+rabbit_1           | 2019-08-08 12:56:49.962 [info] <0.308.0> Running boot step empty_db_check defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.962 [info] <0.308.0> Running boot step rabbit_looking_glass defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.962 [info] <0.308.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.963 [info] <0.308.0> Running boot step background_gc defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.963 [info] <0.308.0> Running boot step connection_tracking defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.963 [info] <0.308.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@localhost
+rabbit_1           | 2019-08-08 12:56:49.963 [info] <0.308.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@localhost
+rabbit_1           | 2019-08-08 12:56:49.964 [info] <0.308.0> Running boot step routing_ready defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.964 [info] <0.308.0> Running boot step pre_flight defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.964 [info] <0.308.0> Running boot step notify_cluster defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.964 [info] <0.308.0> Running boot step networking defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.966 [warning] <0.409.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+rabbit_1           | 2019-08-08 12:56:49.967 [info] <0.423.0> started TCP listener on [::]:5672
+rabbit_1           | 2019-08-08 12:56:49.967 [info] <0.308.0> Running boot step direct_client defined by app rabbit
+rabbit_1           | 2019-08-08 12:56:49.997 [info] <0.473.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+rabbit_1           | 2019-08-08 12:56:49.997 [info] <0.579.0> Statistics database started.
+rabbit_1           | 2019-08-08 12:56:50.135 [info] <0.8.0> Server startup complete; 3 plugins started.
+rabbit_1           |  * rabbitmq_management
+rabbit_1           |  * rabbitmq_web_dispatch
+rabbit_1           |  * rabbitmq_management_agent
+rabbit_1           |  completed with 3 plugins.
+app_1              | 2019-08-08 12:56:55 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:56 +0000] "GET /responses HTTP/1.1" 200 1532 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:57 +0000] "GET /api/features HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/responses" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:57 +0000] "GET /api/templates?q=&template=&limit=20&offset=0 HTTP/1.1" 200 721 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/responses" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:57 +0000] "GET /icons/favicon.ico HTTP/1.1" 200 6518 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/responses" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:59 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:59 +0000] "GET /api/conversations/me HTTP/1.1" 200 1636 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:56:59 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:02 +0000] "GET /api/conversations/me HTTP/1.1" 200 1636 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:57:03.099 [info] <0.589.0> accepting AMQP connection <0.589.0> (172.19.0.7:45480 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:03.107 [info] <0.589.0> connection <0.589.0> (172.19.0.7:45480 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:03.117 [info] <0.589.0> closing AMQP connection <0.589.0> (172.19.0.7:45480 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:03.355 [info] <0.607.0> accepting AMQP connection <0.607.0> (172.19.0.7:45484 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:03.358 [info] <0.607.0> connection <0.607.0> (172.19.0.7:45484 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:03.363 [info] <0.607.0> closing AMQP connection <0.607.0> (172.19.0.7:45484 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:03.366 [info] <0.620.0> accepting AMQP connection <0.620.0> (172.19.0.7:45488 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:03.368 [info] <0.620.0> connection <0.620.0> (172.19.0.7:45488 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:03.372 [info] <0.620.0> closing AMQP connection <0.620.0> (172.19.0.7:45488 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:03.375 [info] <0.633.0> accepting AMQP connection <0.633.0> (172.19.0.7:45492 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:03.378 [info] <0.633.0> connection <0.633.0> (172.19.0.7:45492 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:03.381 [info] <0.633.0> closing AMQP connection <0.633.0> (172.19.0.7:45492 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:03 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:57:03.491 [info] <0.646.0> accepting AMQP connection <0.646.0> (172.19.0.5:37800 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:03.494 [info] <0.646.0> connection <0.646.0> (172.19.0.5:37800 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:06 +0000] "GET /api/conversations/me HTTP/1.1" 200 1665 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:57:08.144 [info] <0.657.0> accepting AMQP connection <0.657.0> (172.19.0.7:45512 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:08.147 [info] <0.657.0> connection <0.657.0> (172.19.0.7:45512 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:08.152 [info] <0.657.0> closing AMQP connection <0.657.0> (172.19.0.7:45512 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:08.170 [info] <0.670.0> accepting AMQP connection <0.670.0> (172.19.0.7:45516 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:08.173 [info] <0.670.0> connection <0.670.0> (172.19.0.7:45516 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:08.179 [info] <0.670.0> closing AMQP connection <0.670.0> (172.19.0.7:45516 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:08.182 [info] <0.683.0> accepting AMQP connection <0.683.0> (172.19.0.7:45520 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:08.186 [info] <0.683.0> connection <0.683.0> (172.19.0.7:45520 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:08.190 [info] <0.683.0> closing AMQP connection <0.683.0> (172.19.0.7:45520 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:08.194 [info] <0.696.0> accepting AMQP connection <0.696.0> (172.19.0.7:45524 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:08.197 [info] <0.696.0> connection <0.696.0> (172.19.0.7:45524 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:08.202 [info] <0.696.0> closing AMQP connection <0.696.0> (172.19.0.7:45524 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:08 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 50 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:09 +0000] "GET /api/conversations/me HTTP/1.1" 200 1805 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+app_1              | 2019-08-08 12:57:09 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:12 +0000] "GET /api/conversations/me HTTP/1.1" 200 1805 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:57:13.580 [info] <0.709.0> accepting AMQP connection <0.709.0> (172.19.0.7:45538 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:13.583 [info] <0.709.0> connection <0.709.0> (172.19.0.7:45538 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:13.589 [info] <0.709.0> closing AMQP connection <0.709.0> (172.19.0.7:45538 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:13.608 [info] <0.722.0> accepting AMQP connection <0.722.0> (172.19.0.7:45542 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:13.610 [info] <0.722.0> connection <0.722.0> (172.19.0.7:45542 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:13.615 [info] <0.722.0> closing AMQP connection <0.722.0> (172.19.0.7:45542 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:13.619 [info] <0.735.0> accepting AMQP connection <0.735.0> (172.19.0.7:45546 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:13.628 [info] <0.735.0> connection <0.735.0> (172.19.0.7:45546 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:13.632 [info] <0.735.0> closing AMQP connection <0.735.0> (172.19.0.7:45546 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:57:13.635 [info] <0.748.0> accepting AMQP connection <0.748.0> (172.19.0.7:45550 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:57:13.638 [info] <0.748.0> connection <0.748.0> (172.19.0.7:45550 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:57:13.645 [info] <0.748.0> closing AMQP connection <0.748.0> (172.19.0.7:45550 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:13 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 48 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:15 +0000] "GET /api/conversations/me HTTP/1.1" 200 1929 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:19 +0000] "GET /api/conversations/me HTTP/1.1" 200 1929 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:21 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:21 +0000] "GET /api/projects/default/models?limit=1&offset=0 HTTP/1.1" 200 234 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:21 +0000] "GET /api/projects/default/models?limit=2&offset=1 HTTP/1.1" 200 443 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:25 +0000] "GET /api/stories?q=&limit=20&offset=0 HTTP/1.1" 200 1069 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:25 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:30 +0000] "GET /api/stories?id=1 HTTP/1.1" 200 579 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1339.61it/s, # trackers=1]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1342.18it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:33 +0000] "GET /api/stories?id=4 HTTP/1.1" 200 396 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1095.12it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:34 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1078.78it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:36 +0000] "GET /api/stories?id=2 HTTP/1.1" 200 861 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+app_1              | 2019-08-08 12:57:36 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1778.00it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:37 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1059.70it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:39 +0000] "GET /api/stories?id=2 HTTP/1.1" 200 861 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1136.98it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:41 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1287.78it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:44 +0000] "GET /api/stories?id=2 HTTP/1.1" 200 861 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:50 +0000] "DELETE /api/stories/2 HTTP/1.1" 204 0 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:50 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1114.62it/s, # trackers=1]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1017.29it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:50 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:53 +0000] "GET /api/domain HTTP/1.1" 200 446 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:57:53 +0000] "GET /api/domainWarnings HTTP/1.1" 200 235 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:11 +0000] "PUT /api/domain HTTP/1.1" 200 432 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:11 +0000] "GET /api/domainWarnings HTTP/1.1" 200 248 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:18 +0000] "PUT /api/domain HTTP/1.1" 200 446 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:18 +0000] "GET /api/domainWarnings HTTP/1.1" 200 235 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:20 +0000] "GET /api/projects/default/dataWarnings HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:20 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1450 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:20 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:20 +0000] "GET /api/projects/default/logs?q=&intent=&limit=20&offset=0 HTTP/1.1" 200 525 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:21 +0000] "GET /api/stories?q=&limit=20&offset=0 HTTP/1.1" 200 816 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:21 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1588.75it/s, # trackers=1]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1306.23it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:58:21 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+app_1              | 2019-08-08 12:58:29 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:00 +0000] "PUT /api/stories/3 HTTP/1.1" 200 259 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-x_1           | Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s]Processed Story Blocks:   0%|          | 0/1 [00:00<?, ?it/s, # trackers=1]Processed Story Blocks: 100%|██████████| 1/1 [00:00<00:00, 1129.93it/s, # trackers=1]
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:00 +0000] "GET /api/stories?id=3 HTTP/1.1" 200 858 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/stories" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:02 +0000] "GET /api/domain HTTP/1.1" 200 446 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:02 +0000] "GET /api/domainWarnings HTTP/1.1" 200 227 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:11 +0000] "POST /api/projects/default/models/jobs HTTP/1.1" 200 54 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:11 +0000] "GET /api/projects/default/models?limit=1&offset=0 HTTP/1.1" 200 222 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/domain" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:13 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:13 +0000] "GET /api/projects/default/models?limit=1&offset=0 HTTP/1.1" 200 222 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:13 +0000] "GET /api/projects/default/models?limit=1&offset=3 HTTP/1.1" 200 222 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:21 +0000] "PUT /api/projects/default/models/20190808-125911/tags/production HTTP/1.1" 204 0 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:23 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:23 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:23 +0000] "GET /api/conversations/me HTTP/1.1" 200 1929 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:27 +0000] "GET /api/conversations/me HTTP/1.1" 200 1929 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:59:29.552 [info] <0.762.0> accepting AMQP connection <0.762.0> (172.19.0.7:45726 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:29.560 [info] <0.762.0> connection <0.762.0> (172.19.0.7:45726 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:29.570 [info] <0.762.0> closing AMQP connection <0.762.0> (172.19.0.7:45726 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:29.587 [info] <0.775.0> accepting AMQP connection <0.775.0> (172.19.0.7:45730 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:29.590 [info] <0.775.0> connection <0.775.0> (172.19.0.7:45730 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:29.595 [info] <0.775.0> closing AMQP connection <0.775.0> (172.19.0.7:45730 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:29.600 [info] <0.788.0> accepting AMQP connection <0.788.0> (172.19.0.7:45734 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:29.605 [info] <0.788.0> connection <0.788.0> (172.19.0.7:45734 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:29.627 [info] <0.788.0> closing AMQP connection <0.788.0> (172.19.0.7:45734 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:29.628 [info] <0.801.0> accepting AMQP connection <0.801.0> (172.19.0.7:45738 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:29.637 [info] <0.801.0> connection <0.801.0> (172.19.0.7:45738 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:29.665 [info] <0.801.0> closing AMQP connection <0.801.0> (172.19.0.7:45738 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:29 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:30 +0000] "GET /api/conversations/me HTTP/1.1" 200 1952 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+app_1              | 2019-08-08 12:59:30 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:33 +0000] "GET /api/conversations/me HTTP/1.1" 200 1952 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:59:33.996 [info] <0.814.0> accepting AMQP connection <0.814.0> (172.19.0.7:45750 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:33.999 [info] <0.814.0> connection <0.814.0> (172.19.0.7:45750 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:34.008 [info] <0.814.0> closing AMQP connection <0.814.0> (172.19.0.7:45750 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:34.252 [info] <0.827.0> accepting AMQP connection <0.827.0> (172.19.0.7:45754 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:34.255 [info] <0.827.0> connection <0.827.0> (172.19.0.7:45754 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:34.262 [info] <0.827.0> closing AMQP connection <0.827.0> (172.19.0.7:45754 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:34.268 [info] <0.840.0> accepting AMQP connection <0.840.0> (172.19.0.7:45758 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:34.271 [info] <0.840.0> connection <0.840.0> (172.19.0.7:45758 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:34.276 [info] <0.840.0> closing AMQP connection <0.840.0> (172.19.0.7:45758 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:34.280 [info] <0.853.0> accepting AMQP connection <0.853.0> (172.19.0.7:45762 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:34.284 [info] <0.853.0> connection <0.853.0> (172.19.0.7:45762 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:34.290 [info] <0.853.0> closing AMQP connection <0.853.0> (172.19.0.7:45762 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:34 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 50 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:36 +0000] "GET /api/conversations/me HTTP/1.1" 200 2041 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:39 +0000] "GET /api/conversations/me HTTP/1.1" 200 2041 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 12:59:41.049 [info] <0.866.0> accepting AMQP connection <0.866.0> (172.19.0.7:45778 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:41.052 [info] <0.866.0> connection <0.866.0> (172.19.0.7:45778 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:41.061 [info] <0.866.0> closing AMQP connection <0.866.0> (172.19.0.7:45778 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rasa-production_1  | 2019-08-08 12:59:41 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://action_server:5055/webhook'. Is the server running? Error: Cannot connect to host action_server:5055 ssl:None [Name or service not known]
+rasa-production_1  | 2019-08-08 12:59:41 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+rabbit_1           | 2019-08-08 12:59:41.134 [info] <0.879.0> accepting AMQP connection <0.879.0> (172.19.0.7:45782 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:41.138 [info] <0.879.0> connection <0.879.0> (172.19.0.7:45782 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:41.145 [info] <0.879.0> closing AMQP connection <0.879.0> (172.19.0.7:45782 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:41.149 [info] <0.892.0> accepting AMQP connection <0.892.0> (172.19.0.7:45786 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:41.152 [info] <0.892.0> connection <0.892.0> (172.19.0.7:45786 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:41.157 [info] <0.892.0> closing AMQP connection <0.892.0> (172.19.0.7:45786 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:41.161 [info] <0.905.0> accepting AMQP connection <0.905.0> (172.19.0.7:45790 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:41.164 [info] <0.905.0> connection <0.905.0> (172.19.0.7:45790 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:41.169 [info] <0.905.0> closing AMQP connection <0.905.0> (172.19.0.7:45790 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 12:59:41.172 [info] <0.918.0> accepting AMQP connection <0.918.0> (172.19.0.7:45794 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 12:59:41.175 [info] <0.918.0> connection <0.918.0> (172.19.0.7:45794 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 12:59:41.180 [info] <0.918.0> closing AMQP connection <0.918.0> (172.19.0.7:45794 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:41 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 51 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:43 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:46 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:49 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/conversationIntents HTTP/1.1" 200 44 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/conversationEntities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/conversationActions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/conversationPolicies HTTP/1.1" 200 51 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:52 +0000] "GET /api/conversations?limit=20&offset=0&intent=&entity=&action=&policies=&exclude_self=true HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:54 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:54 +0000] "GET /api/projects/default/models?limit=1&offset=0 HTTP/1.1" 200 234 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/models" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:56 +0000] "GET /api/projects/default/dataWarnings HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:56 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:56 +0000] "GET /api/projects/default/logs?q=&intent=&limit=20&offset=0 HTTP/1.1" 200 525 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:12:59:56 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1450 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:01 +0000] "GET /api/projects/default/data?q=&intent=&limit=20&offset=0 HTTP/1.1" 200 963 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data/training-data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:01 +0000] "GET /api/projects/default/data?q=&intent=&limit=10&offset=20 HTTP/1.1" 200 539 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data/training-data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:01 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data/training-data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:06 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:06 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:06 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:09 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:12 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:16 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:19 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:22 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:25 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:28 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+app_1              | 2019-08-08 13:00:32 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:32 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa_app_1 exited with code 1
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:36 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:40 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:44 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:48 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:52 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:00:56 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:00 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:04 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:08 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:12 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:16 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:20 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:24 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:28 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:32 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+app_1              | 2019-08-08 13:01:33 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:36 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:40 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:44 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:48 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:52 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:01:56 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:00 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:04 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:08 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:11 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:12 +0000] "GET /api/projects/default/dataWarnings HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:13 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:13 +0000] "GET /api/projects/default/logs?q=&intent=&limit=20&offset=0 HTTP/1.1" 200 525 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:02:13 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1450 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 2019/08/08 13:02:31 [info] 10#0: *139 client closed connection while waiting for request, client: 177.136.148.42, server: 0.0.0.0:8080
+app_1              | 2019-08-08 13:02:34 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+app_1              | 2019-08-08 13:03:35 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | Traceback (most recent call last):
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+app_1              |     "__main__", mod_spec)
+app_1              |   File "/usr/local/lib/python3.6/runpy.py", line 85, in _run_code
+app_1              |     exec(code, run_globals)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 30, in <module>
+app_1              |     main()
+app_1              |   File "/app/rasa_sdk/__main__.py", line 26, in main
+app_1              |     main_from_args(cmdline_args)
+app_1              |   File "/app/rasa_sdk/__main__.py", line 18, in main_from_args
+app_1              |     run(args.actions, args.port, args.cors)
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 126, in run
+app_1              |     cors_origins=cors_origins, action_package_name=action_package_name
+app_1              |   File "/app/rasa_sdk/endpoint.py", line 42, in endpoint_app
+app_1              |     executor.register_package(action_package_name)
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+app_1              |   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+app_1              |   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+app_1              |   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+app_1              |   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+app_1              |   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+app_1              |   File "/app/actions/actions.py", line 10
+app_1              |     def run(self, dispatcher, tracker, domain):
+app_1              |                                               ^
+app_1              | IndentationError: unindent does not match any outer indentation level
+rasa_app_1 exited with code 1
+app_1              | 2019-08-08 13:04:37 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | 2019-08-08 13:04:37 ERROR    rasa_sdk.executor  - Failed to register package 'actions.actions'.
+app_1              | Traceback (most recent call last):
+app_1              |   File "/app/rasa_sdk/executor.py", line 184, in register_package
+app_1              |     self._import_submodules(package)
+app_1              |   File "/app/rasa_sdk/executor.py", line 171, in _import_submodules
+app_1              |     package = importlib.import_module(package)
+app_1              |   File "/usr/local/lib/python3.6/importlib/__init__.py", line 126, in import_module
+app_1              |     return _bootstrap._gcd_import(name[level:], package, level)
+app_1              |   File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+app_1              |   File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+app_1              |   File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+app_1              | ModuleNotFoundError: No module named 'actions.actions'
+app_1              | 2019-08-08 13:04:37 INFO     rasa_sdk.endpoint  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:20 +0000] "GET /data HTTP/1.1" 200 1532 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:21 +0000] "GET /api/projects/default/dataWarnings HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:21 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1450 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:21 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:21 +0000] "GET /api/features HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:21 +0000] "GET /api/projects/default/logs?q=&intent=&limit=20&offset=0 HTTP/1.1" 200 525 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:21 +0000] "GET /icons/favicon.ico HTTP/1.1" 200 6518 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/data" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:23 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:23 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:23 +0000] "GET /api/conversations/me HTTP/1.1" 200 2217 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:06:26.797 [info] <0.947.0> accepting AMQP connection <0.947.0> (172.19.0.7:46106 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:26.800 [info] <0.947.0> connection <0.947.0> (172.19.0.7:46106 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:26.808 [info] <0.947.0> closing AMQP connection <0.947.0> (172.19.0.7:46106 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:26.830 [info] <0.960.0> accepting AMQP connection <0.960.0> (172.19.0.7:46110 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:26.834 [info] <0.960.0> connection <0.960.0> (172.19.0.7:46110 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:26.841 [info] <0.960.0> closing AMQP connection <0.960.0> (172.19.0.7:46110 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:26.848 [info] <0.973.0> accepting AMQP connection <0.973.0> (172.19.0.7:46114 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:26.852 [info] <0.973.0> connection <0.973.0> (172.19.0.7:46114 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:26.859 [info] <0.973.0> closing AMQP connection <0.973.0> (172.19.0.7:46114 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:26.862 [info] <0.986.0> accepting AMQP connection <0.986.0> (172.19.0.7:46118 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:26.866 [info] <0.986.0> connection <0.986.0> (172.19.0.7:46118 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:26.878 [info] <0.986.0> closing AMQP connection <0.986.0> (172.19.0.7:46118 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:26 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:26 +0000] "GET /api/conversations/me HTTP/1.1" 200 2252 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:27 +0000] "GET /api/conversations/me HTTP/1.1" 200 2270 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:06:30.152 [info] <0.999.0> accepting AMQP connection <0.999.0> (172.19.0.7:46134 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:30.155 [info] <0.999.0> connection <0.999.0> (172.19.0.7:46134 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:30.160 [info] <0.999.0> closing AMQP connection <0.999.0> (172.19.0.7:46134 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:30.178 [info] <0.1012.0> accepting AMQP connection <0.1012.0> (172.19.0.7:46138 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:30.182 [info] <0.1012.0> connection <0.1012.0> (172.19.0.7:46138 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:30.189 [info] <0.1012.0> closing AMQP connection <0.1012.0> (172.19.0.7:46138 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:30.193 [info] <0.1025.0> accepting AMQP connection <0.1025.0> (172.19.0.7:46142 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:30.196 [info] <0.1025.0> connection <0.1025.0> (172.19.0.7:46142 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:30.202 [info] <0.1025.0> closing AMQP connection <0.1025.0> (172.19.0.7:46142 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:30.207 [info] <0.1038.0> accepting AMQP connection <0.1038.0> (172.19.0.7:46146 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:30.210 [info] <0.1038.0> connection <0.1038.0> (172.19.0.7:46146 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:30.214 [info] <0.1038.0> closing AMQP connection <0.1038.0> (172.19.0.7:46146 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:30 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 50 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:31 +0000] "GET /api/conversations/me HTTP/1.1" 200 2352 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 2019/08/08 13:06:34 [info] 10#0: *152 client closed connection while waiting for request, client: 177.136.148.42, server: 0.0.0.0:8080
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:34 +0000] "GET /api/conversations/me HTTP/1.1" 200 2352 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:06:34.337 [info] <0.1051.0> accepting AMQP connection <0.1051.0> (172.19.0.7:46158 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:34.340 [info] <0.1051.0> connection <0.1051.0> (172.19.0.7:46158 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:34.345 [info] <0.1051.0> closing AMQP connection <0.1051.0> (172.19.0.7:46158 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:34.363 [info] <0.1064.0> accepting AMQP connection <0.1064.0> (172.19.0.7:46162 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:34.366 [info] <0.1064.0> connection <0.1064.0> (172.19.0.7:46162 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:34.373 [info] <0.1064.0> closing AMQP connection <0.1064.0> (172.19.0.7:46162 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:34.377 [info] <0.1077.0> accepting AMQP connection <0.1077.0> (172.19.0.7:46166 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:34.380 [info] <0.1077.0> connection <0.1077.0> (172.19.0.7:46166 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:34.386 [info] <0.1077.0> closing AMQP connection <0.1077.0> (172.19.0.7:46166 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:34.390 [info] <0.1090.0> accepting AMQP connection <0.1090.0> (172.19.0.7:46170 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:34.394 [info] <0.1090.0> connection <0.1090.0> (172.19.0.7:46170 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:34.401 [info] <0.1090.0> closing AMQP connection <0.1090.0> (172.19.0.7:46170 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:34 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 48 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:37 +0000] "GET /api/conversations/me HTTP/1.1" 200 2496 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:40 +0000] "GET /api/conversations/me HTTP/1.1" 200 2496 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:44 +0000] "GET /api/conversations/me HTTP/1.1" 200 2496 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:06:44.614 [info] <0.1103.0> accepting AMQP connection <0.1103.0> (172.19.0.7:46188 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:44.617 [info] <0.1103.0> connection <0.1103.0> (172.19.0.7:46188 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:44.625 [info] <0.1103.0> closing AMQP connection <0.1103.0> (172.19.0.7:46188 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:44.639 [info] <0.1116.0> accepting AMQP connection <0.1116.0> (172.19.0.7:46192 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:44.642 [info] <0.1116.0> connection <0.1116.0> (172.19.0.7:46192 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:44.647 [info] <0.1116.0> closing AMQP connection <0.1116.0> (172.19.0.7:46192 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:44.651 [info] <0.1129.0> accepting AMQP connection <0.1129.0> (172.19.0.7:46196 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:44.654 [info] <0.1129.0> connection <0.1129.0> (172.19.0.7:46196 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:44.662 [info] <0.1129.0> closing AMQP connection <0.1129.0> (172.19.0.7:46196 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:44.666 [info] <0.1142.0> accepting AMQP connection <0.1142.0> (172.19.0.7:46200 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:44.669 [info] <0.1142.0> connection <0.1142.0> (172.19.0.7:46200 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:44.676 [info] <0.1142.0> closing AMQP connection <0.1142.0> (172.19.0.7:46200 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:44 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:47 +0000] "GET /api/conversations/me HTTP/1.1" 200 2533 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:50 +0000] "GET /api/conversations/me HTTP/1.1" 200 2533 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:06:51.381 [info] <0.1156.0> accepting AMQP connection <0.1156.0> (172.19.0.7:46216 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:51.384 [info] <0.1156.0> connection <0.1156.0> (172.19.0.7:46216 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:51.389 [info] <0.1156.0> closing AMQP connection <0.1156.0> (172.19.0.7:46216 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:51.405 [info] <0.1169.0> accepting AMQP connection <0.1169.0> (172.19.0.7:46220 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:51.409 [info] <0.1169.0> connection <0.1169.0> (172.19.0.7:46220 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:51.414 [info] <0.1169.0> closing AMQP connection <0.1169.0> (172.19.0.7:46220 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:51.418 [info] <0.1182.0> accepting AMQP connection <0.1182.0> (172.19.0.7:46224 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:51.422 [info] <0.1182.0> connection <0.1182.0> (172.19.0.7:46224 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:51.428 [info] <0.1182.0> closing AMQP connection <0.1182.0> (172.19.0.7:46224 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:06:51.431 [info] <0.1195.0> accepting AMQP connection <0.1195.0> (172.19.0.7:46228 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:06:51.434 [info] <0.1195.0> connection <0.1195.0> (172.19.0.7:46228 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:06:51.440 [info] <0.1195.0> closing AMQP connection <0.1195.0> (172.19.0.7:46228 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:51 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 50 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:53 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:06:56 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:00 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:03 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:06 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:09 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:12 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:16 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:19 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:22 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:25 +0000] "GET /api/conversations/me HTTP/1.1" 200 2585 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:07:26.764 [info] <0.1208.0> accepting AMQP connection <0.1208.0> (172.19.0.7:46270 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:26.768 [info] <0.1208.0> connection <0.1208.0> (172.19.0.7:46270 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:26.774 [info] <0.1208.0> closing AMQP connection <0.1208.0> (172.19.0.7:46270 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:07:26.788 [info] <0.1221.0> accepting AMQP connection <0.1221.0> (172.19.0.7:46274 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:26.791 [info] <0.1221.0> connection <0.1221.0> (172.19.0.7:46274 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:26.795 [info] <0.1221.0> closing AMQP connection <0.1221.0> (172.19.0.7:46274 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:26 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:28 +0000] "GET /api/conversations/me HTTP/1.1" 200 2693 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:32 +0000] "GET /api/conversations/me HTTP/1.1" 200 2693 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:35 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1472 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:35 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:07:35.252 [info] <0.1234.0> accepting AMQP connection <0.1234.0> (172.19.0.7:46294 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:35.255 [info] <0.1234.0> connection <0.1234.0> (172.19.0.7:46294 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:35.260 [info] <0.1234.0> closing AMQP connection <0.1234.0> (172.19.0.7:46294 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:35 +0000] "POST /api/conversations HTTP/1.1" 201 323 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:37 +0000] "POST /api/projects/default/logs?q=hi HTTP/1.1" 200 488 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:07:38.928 [info] <0.1247.0> accepting AMQP connection <0.1247.0> (172.19.0.7:46310 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:38.931 [info] <0.1247.0> connection <0.1247.0> (172.19.0.7:46310 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:38.935 [info] <0.1247.0> closing AMQP connection <0.1247.0> (172.19.0.7:46310 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:38 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/events HTTP/1.1" 200 389 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:39 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:39 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/predict HTTP/1.1" 200 584 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:07:42.446 [info] <0.1260.0> accepting AMQP connection <0.1260.0> (172.19.0.7:46326 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:42.449 [info] <0.1260.0> connection <0.1260.0> (172.19.0.7:46326 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:42.456 [info] <0.1260.0> closing AMQP connection <0.1260.0> (172.19.0.7:46326 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:07:42.460 [info] <0.1273.0> accepting AMQP connection <0.1273.0> (172.19.0.7:46330 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:42.464 [info] <0.1273.0> connection <0.1273.0> (172.19.0.7:46330 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:42.474 [info] <0.1273.0> closing AMQP connection <0.1273.0> (172.19.0.7:46330 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:42 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/execute HTTP/1.1" 200 559 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:42 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:42 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/predict HTTP/1.1" 200 696 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:07:44.962 [info] <0.1286.0> accepting AMQP connection <0.1286.0> (172.19.0.7:46344 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:44.965 [info] <0.1286.0> connection <0.1286.0> (172.19.0.7:46344 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:44.970 [info] <0.1286.0> closing AMQP connection <0.1286.0> (172.19.0.7:46344 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:44 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/execute HTTP/1.1" 200 560 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:47 +0000] "POST /api/projects/default/logs?q=sad HTTP/1.1" 200 489 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:07:50.310 [info] <0.1299.0> accepting AMQP connection <0.1299.0> (172.19.0.7:46362 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:50.313 [info] <0.1299.0> connection <0.1299.0> (172.19.0.7:46362 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:50.319 [info] <0.1299.0> closing AMQP connection <0.1299.0> (172.19.0.7:46362 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:50 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/events HTTP/1.1" 200 387 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:50 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:50 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/predict HTTP/1.1" 200 790 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-production_1  | 2019-08-08 13:07:55 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://action_server:5055/webhook'. Is the server running? Error: Cannot connect to host action_server:5055 ssl:None [Name or service not known]
+rasa-production_1  | 2019-08-08 13:07:55 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+rabbit_1           | 2019-08-08 13:07:55.758 [info] <0.1312.0> accepting AMQP connection <0.1312.0> (172.19.0.7:46382 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:07:55.761 [info] <0.1312.0> connection <0.1312.0> (172.19.0.7:46382 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:07:55.768 [info] <0.1312.0> closing AMQP connection <0.1312.0> (172.19.0.7:46382 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:55 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/execute HTTP/1.1" 200 660 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:56 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:56 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/predict HTTP/1.1" 200 815 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-production_1  | 2019-08-08 13:07:57 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://action_server:5055/webhook'. Is the server running? Error: Cannot connect to host action_server:5055 ssl:None [Name or service not known]
+rasa-production_1  | 2019-08-08 13:07:57 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:57 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/execute HTTP/1.1" 200 660 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:57 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:07:57 +0000] "POST /api/conversations/1b3fc649c79b4ff3a01080e53f911f2d/predict HTTP/1.1" 200 815 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:19:59 +0000] "GET /talk/strict HTTP/1.1" 200 1532 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:00 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:00 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:20:00.860 [info] <0.1335.0> accepting AMQP connection <0.1335.0> (172.19.0.7:46700 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:00.863 [info] <0.1335.0> connection <0.1335.0> (172.19.0.7:46700 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:00.871 [info] <0.1335.0> closing AMQP connection <0.1335.0> (172.19.0.7:46700 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:00 +0000] "POST /api/conversations HTTP/1.1" 201 323 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:00 +0000] "GET /api/features HTTP/1.1" 200 2 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:00 +0000] "GET /icons/favicon.ico HTTP/1.1" 200 6518 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:01 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1472 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:20:03.183 [info] <0.1348.0> accepting AMQP connection <0.1348.0> (172.19.0.7:46714 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:03.185 [info] <0.1348.0> connection <0.1348.0> (172.19.0.7:46714 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:03.191 [info] <0.1348.0> closing AMQP connection <0.1348.0> (172.19.0.7:46714 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:03 +0000] "POST /api/conversations HTTP/1.1" 201 323 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:05 +0000] "POST /api/projects/default/logs?q=hi HTTP/1.1" 200 489 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:20:08.367 [info] <0.1361.0> accepting AMQP connection <0.1361.0> (172.19.0.7:46730 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:08.370 [info] <0.1361.0> connection <0.1361.0> (172.19.0.7:46730 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:08.376 [info] <0.1361.0> closing AMQP connection <0.1361.0> (172.19.0.7:46730 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:08 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/events HTTP/1.1" 200 389 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:08 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:08 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/predict HTTP/1.1" 200 583 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 2019/08/08 13:20:11 [info] 10#0: *215 client closed connection while waiting for request, client: 177.136.148.42, server: 0.0.0.0:8080
+rabbit_1           | 2019-08-08 13:20:11.249 [info] <0.1374.0> accepting AMQP connection <0.1374.0> (172.19.0.7:46746 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:11.252 [info] <0.1374.0> connection <0.1374.0> (172.19.0.7:46746 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:11.259 [info] <0.1374.0> closing AMQP connection <0.1374.0> (172.19.0.7:46746 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-08 13:20:11.263 [info] <0.1387.0> accepting AMQP connection <0.1387.0> (172.19.0.7:46750 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:11.268 [info] <0.1387.0> connection <0.1387.0> (172.19.0.7:46750 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:11.274 [info] <0.1387.0> closing AMQP connection <0.1387.0> (172.19.0.7:46750 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:11 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/execute HTTP/1.1" 200 554 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:11 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/predict HTTP/1.1" 200 692 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:11 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:20:15.545 [info] <0.1400.0> accepting AMQP connection <0.1400.0> (172.19.0.7:46764 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:15.548 [info] <0.1400.0> connection <0.1400.0> (172.19.0.7:46764 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:15.552 [info] <0.1400.0> closing AMQP connection <0.1400.0> (172.19.0.7:46764 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:15 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/execute HTTP/1.1" 200 552 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:20 +0000] "POST /api/projects/default/logs?q=sad HTTP/1.1" 200 488 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rabbit_1           | 2019-08-08 13:20:22.914 [info] <0.1413.0> accepting AMQP connection <0.1413.0> (172.19.0.7:46782 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:22.917 [info] <0.1413.0> connection <0.1413.0> (172.19.0.7:46782 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:22.923 [info] <0.1413.0> closing AMQP connection <0.1413.0> (172.19.0.7:46782 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:22 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/events HTTP/1.1" 200 387 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:23 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:23 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/predict HTTP/1.1" 200 789 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-production_1  | 2019-08-08 13:20:24 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://action_server:5055/webhook'. Is the server running? Error: Cannot connect to host action_server:5055 ssl:None [Name or service not known]
+rasa-production_1  | 2019-08-08 13:20:24 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+rabbit_1           | 2019-08-08 13:20:24.940 [info] <0.1426.0> accepting AMQP connection <0.1426.0> (172.19.0.7:46796 -> 172.19.0.2:5672)
+rabbit_1           | 2019-08-08 13:20:24.943 [info] <0.1426.0> connection <0.1426.0> (172.19.0.7:46796 -> 172.19.0.2:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-08 13:20:24.950 [info] <0.1426.0> closing AMQP connection <0.1426.0> (172.19.0.7:46796 -> 172.19.0.2:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:24 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/execute HTTP/1.1" 200 655 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:25 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [08/Aug/2019:13:20:25 +0000] "POST /api/conversations/cf094b0463c5473cb1291beaa97561e8/predict HTTP/1.1" 200 812 "http://ec2-52-14-39-183.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | [94mTraining Core model...[0m
+rasa-worker_1      | [94mCore model training completed.[0m
+rasa-worker_1      | [94mTraining NLU model...[0m
+rasa-worker_1      | [94mNLU model training completed.[0m
+rasa-worker_1      | [92mYour Rasa model is trained and saved at '/app/models/20190808-125911.tar.gz'.[0m
+rasa_rasa-worker_1 exited with code 0

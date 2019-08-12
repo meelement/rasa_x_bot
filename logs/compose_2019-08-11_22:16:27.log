@@ -1,0 +1,414 @@
+Attaching to rasa_logger_1, rasa_nginx_1, rasa_rasa-worker_1, rasa_rasa-production_1, rasa_rasa-x_1, rasa_app_1, rasa_rabbit_1, rasa_duckling_1, rasa_db_1
+nginx_1            | SSL encryption is not used since no certificates were provided.
+nginx_1            |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+nginx_1            |                                  Dload  Upload   Total   Spent    Left  Speed
+nginx_1            |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to app port 80: Connection refused
+nginx_1            | 7
+nginx_1            | >> exec docker CMD
+nginx_1            | nginx
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: using the "epoll" event method
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: nginx/1.14.2
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: built by gcc 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) 
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: OS: Linux 4.15.0-1044-aws
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: start worker processes
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: start worker process 10
+nginx_1            | 2019/08/11 22:16:26 [notice] 1#0: start worker process 11
+rasa-x_1           | [93mVersion of model 20190808-122254.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190809-042548.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-125911.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-121820.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+rasa-x_1           | [93mVersion of model 20190808-125224.tar.gz version is not compatible. The model was trained with Rasa version 1.1.7 but the current Rasa requires a minimum version of None.Please retrain your model with a more recent Rasa version.[0m
+app_1              | 2019-08-11 22:16:08 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+app_1              | 2019-08-11 22:16:09 INFO     rasa_sdk.executor  - Registered function for 'action_joke'.
+app_1              | 2019-08-11 22:16:09 INFO     rasa_sdk.endpoint  - Action endpoint is up and running. on ('0.0.0.0', 5055)
+duckling_1         | no port specified, defaulting to port 8000
+duckling_1         | Listening on http://0.0.0.0:8000
+rabbit_1           | [0m
+rabbit_1           | [0m[1mWelcome to the Bitnami rabbitmq container[0m
+rabbit_1           | [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq[0m
+rabbit_1           | [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-rabbitmq/issues[0m
+rabbit_1           | [0mSend us your feedback at [1mcontainers@bitnami.com[0m
+rabbit_1           | [0m
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ setup **
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Validating settings in RABBITMQ_* env vars..
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Initializing RabbitMQ...
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Generating random cookie
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Starting RabbitMQ in background...
+rabbit_1           | Waiting for erlang distribution on node 'rabbit@localhost' while OS process '31' is running
+rabbit_1           | Waiting for applications 'rabbit_and_plugins' to start on node 'rabbit@localhost'
+db_1               | [0m
+db_1               | [0m[1mWelcome to the Bitnami postgresql container[0m
+db_1               | [0mSubscribe to project updates by watching [1mhttps://github.com/bitnami/bitnami-docker-postgresql[0m
+db_1               | [0mSubmit issues and feature requests at [1mhttps://github.com/bitnami/bitnami-docker-postgresql/issues[0m
+db_1               | [0mSend us your feedback at [1mcontainers@bitnami.com[0m
+db_1               | [0m
+db_1               | [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL setup **
+db_1               | [0m[38;5;2mINFO [0m ==> Validating settings in POSTGRESQL_* env vars..
+db_1               | [0m[38;5;2mINFO [0m ==> Initializing PostgreSQL database...
+db_1               | [0m[38;5;2mINFO [0m ==> postgresql.conf file not detected. Generating it...
+db_1               | [0m[38;5;2mINFO [0m ==> pg_hba.conf file not detected. Generating it...
+db_1               | [0m[38;5;2mINFO [0m ==> Deploying PostgreSQL with persisted data...
+db_1               | [0m[38;5;2mINFO [0m ==> Configuring replication parameters
+db_1               | [0m[38;5;2mINFO [0m ==> Loading custom scripts...
+db_1               | [0m[38;5;2mINFO [0m ==> Enabling remote connections
+db_1               | [0m[38;5;2mINFO [0m ==> Stopping PostgreSQL...
+db_1               | [0m[38;5;2mINFO [0m ==> ** PostgreSQL setup finished! **
+db_1               | 
+db_1               | [0m[38;5;2mINFO [0m ==> ** Starting PostgreSQL **
+db_1               | 2019-08-11 22:16:09.684 GMT [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1               | 2019-08-11 22:16:09.684 GMT [1] LOG:  listening on IPv6 address "::", port 5432
+db_1               | 2019-08-11 22:16:09.697 GMT [1] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+db_1               | 2019-08-11 22:16:09.744 GMT [141] LOG:  database system was shut down at 2019-08-09 04:41:18 GMT
+db_1               | 2019-08-11 22:16:09.780 GMT [1] LOG:  database system is ready to accept connections
+rabbit_1           | Applications 'rabbit_and_plugins' are running on node 'rabbit@localhost'
+rabbit_1           | [0m[38;5;2mINFO [0m ==> Stopping RabbitMQ...
+rabbit_1           | 
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** RabbitMQ setup finished! **
+rabbit_1           | [0m[38;5;2mINFO [0m ==> ** Starting RabbitMQ **
+rabbit_1           | 2019-08-11 22:16:40.671 [info] <0.308.0> 
+rabbit_1           |  Starting RabbitMQ 3.7.15 on Erlang 22.0
+rabbit_1           |  Copyright (C) 2007-2019 Pivotal Software, Inc.
+rabbit_1           |  Licensed under the MPL.  See https://www.rabbitmq.com/
+rabbit_1           | 
+rabbit_1           |   ##  ##
+rabbit_1           |   ##  ##      RabbitMQ 3.7.15. Copyright (C) 2007-2019 Pivotal Software, Inc.
+rabbit_1           |   ##########  Licensed under the MPL.  See https://www.rabbitmq.com/
+rabbit_1           |   ######  ##
+rabbit_1           |   ##########  Logs: <stdout>
+rabbit_1           | 
+rabbit_1           |               Starting broker...
+rabbit_1           | 2019-08-11 22:16:40.673 [info] <0.308.0> 
+rabbit_1           |  node           : rabbit@localhost
+rabbit_1           |  home dir       : /opt/bitnami/rabbitmq/.rabbitmq
+rabbit_1           |  config file(s) : /opt/bitnami/rabbitmq/etc/rabbitmq/rabbitmq.config
+rabbit_1           |  cookie hash    : 4yCctZBQ7cSg9rZ+bmK6jw==
+rabbit_1           |  log(s)         : <stdout>
+rabbit_1           |  database dir   : /bitnami/rabbitmq/mnesia/rabbit@localhost
+rabbit_1           | 2019-08-11 22:16:42.146 [info] <0.308.0> Running boot step pre_boot defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.146 [info] <0.308.0> Running boot step rabbit_core_metrics defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.148 [info] <0.308.0> Running boot step rabbit_alarm defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.152 [info] <0.316.0> Memory high watermark set to 3190 MiB (3345175347 bytes) of 7975 MiB (8362938368 bytes) total
+rabbit_1           | 2019-08-11 22:16:42.156 [info] <0.318.0> Enabling free disk space monitoring
+rabbit_1           | 2019-08-11 22:16:42.156 [info] <0.318.0> Disk free limit set to 836MB
+rabbit_1           | 2019-08-11 22:16:42.160 [info] <0.308.0> Running boot step code_server_cache defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.160 [info] <0.308.0> Running boot step file_handle_cache defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.160 [info] <0.321.0> Limiting to approx 1048476 file handles (943626 sockets)
+rabbit_1           | 2019-08-11 22:16:42.160 [info] <0.322.0> FHC read buffering:  OFF
+rabbit_1           | 2019-08-11 22:16:42.161 [info] <0.322.0> FHC write buffering: ON
+rabbit_1           | 2019-08-11 22:16:42.161 [info] <0.308.0> Running boot step worker_pool defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.163 [info] <0.308.0> Running boot step database defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.165 [info] <0.308.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbit_1           | 2019-08-11 22:16:42.258 [info] <0.308.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbit_1           | 2019-08-11 22:16:42.258 [info] <0.308.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+rabbit_1           | 2019-08-11 22:16:42.258 [info] <0.308.0> Running boot step database_sync defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.258 [info] <0.308.0> Running boot step codec_correctness_check defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step external_infrastructure defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step rabbit_registry defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step rabbit_queue_location_random defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step rabbit_event defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.259 [info] <0.308.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_priority_queue defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Priority queues enabled, real BQ is rabbit_variable_queue
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.260 [info] <0.308.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.261 [info] <0.308.0> Running boot step kernel_ready defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.261 [info] <0.308.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.261 [info] <0.308.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.266 [info] <0.308.0> Running boot step guid_generator defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.291 [info] <0.308.0> Running boot step rabbit_node_monitor defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.291 [info] <0.346.0> Starting rabbit_node_monitor
+rabbit_1           | 2019-08-11 22:16:42.292 [info] <0.308.0> Running boot step delegate_sup defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.293 [info] <0.308.0> Running boot step rabbit_memory_monitor defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.293 [info] <0.308.0> Running boot step core_initialized defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.294 [info] <0.308.0> Running boot step upgrade_queues defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.319 [info] <0.308.0> Running boot step rabbit_connection_tracking defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.319 [info] <0.308.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.319 [info] <0.308.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.319 [info] <0.308.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.320 [info] <0.308.0> Running boot step rabbit_policies defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.321 [info] <0.308.0> Running boot step rabbit_policy defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.321 [info] <0.308.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.322 [info] <0.308.0> Running boot step rabbit_vhost_limit defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.322 [info] <0.308.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+rabbit_1           | 2019-08-11 22:16:42.322 [info] <0.308.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+rabbit_1           | 2019-08-11 22:16:42.322 [info] <0.308.0> Management plugin: using rates mode 'basic'
+rabbit_1           | 2019-08-11 22:16:42.322 [info] <0.308.0> Running boot step recovery defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.325 [info] <0.379.0> Making sure data directory '/bitnami/rabbitmq/mnesia/rabbit@localhost/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+rabbit_1           | 2019-08-11 22:16:42.377 [info] <0.379.0> Starting message stores for vhost '/'
+rabbit_1           | 2019-08-11 22:16:42.377 [info] <0.383.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+rabbit_1           | 2019-08-11 22:16:42.387 [info] <0.379.0> Started message store of type transient for vhost '/'
+rabbit_1           | 2019-08-11 22:16:42.387 [info] <0.386.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+rabbit_1           | 2019-08-11 22:16:42.391 [info] <0.379.0> Started message store of type persistent for vhost '/'
+rabbit_1           | 2019-08-11 22:16:42.393 [info] <0.308.0> Running boot step load_definitions defined by app rabbitmq_management
+rabbit_1           | 2019-08-11 22:16:42.393 [info] <0.308.0> Running boot step empty_db_check defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.393 [info] <0.308.0> Running boot step rabbit_looking_glass defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.393 [info] <0.308.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.393 [info] <0.308.0> Running boot step background_gc defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.393 [info] <0.308.0> Running boot step connection_tracking defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.394 [info] <0.308.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@localhost
+rabbit_1           | 2019-08-11 22:16:42.394 [info] <0.308.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@localhost
+rabbit_1           | 2019-08-11 22:16:42.394 [info] <0.308.0> Running boot step routing_ready defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.394 [info] <0.308.0> Running boot step pre_flight defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.394 [info] <0.308.0> Running boot step notify_cluster defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.394 [info] <0.308.0> Running boot step networking defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.397 [info] <0.308.0> Running boot step direct_client defined by app rabbit
+rabbit_1           | 2019-08-11 22:16:42.396 [warning] <0.409.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+rabbit_1           | 2019-08-11 22:16:42.397 [info] <0.423.0> started TCP listener on [::]:5672
+rabbit_1           | 2019-08-11 22:16:42.439 [info] <0.473.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+rabbit_1           | 2019-08-11 22:16:42.441 [info] <0.579.0> Statistics database started.
+rabbit_1           |  completed with 3 plugins.
+rabbit_1           | 2019-08-11 22:16:42.695 [info] <0.8.0> Server startup complete; 3 plugins started.
+rabbit_1           |  * rabbitmq_management
+rabbit_1           |  * rabbitmq_web_dispatch
+rabbit_1           |  * rabbitmq_management_agent
+rabbit_1           | 2019-08-11 22:16:43.709 [info] <0.589.0> accepting AMQP connection <0.589.0> (172.18.0.6:43038 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:16:43.746 [info] <0.589.0> connection <0.589.0> (172.18.0.6:43038 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa-worker_1      | Traceback (most recent call last):
+rasa-worker_1      |   File "/usr/local/bin/rasa", line 10, in <module>
+rasa-worker_1      |     sys.exit(main())
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/__main__.py", line 76, in main
+rasa-worker_1      |     cmdline_arguments.func(cmdline_arguments)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 289, in rasa_x
+rasa-worker_1      |     run_in_production(args)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 303, in run_in_production
+rasa-worker_1      |     _rasa_service(args, endpoints)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/cli/x.py", line 82, in _rasa_service
+rasa-worker_1      |     jwt_method=args.jwt_method,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 158, in serve_application
+rasa-worker_1      |     log_file=log_file,
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/run.py", line 99, in configure_app
+rasa-worker_1      |     rasa.core.channels.channel.register(input_channels, app, route=route)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 72, in register
+rasa-worker_1      |     app.blueprint(channel.blueprint(handler), url_prefix=p)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/rasa/core/channels/telegram.py", line 242, in blueprint
+rasa-worker_1      |     out_channel.setWebhook(self.webhook_url)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 65, in decorator
+rasa-worker_1      |     result = func(self, *args, **kwargs)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/bot.py", line 2070, in set_webhook
+rasa-worker_1      |     result = self._request.post(url_, data, timeout=timeout)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 309, in post
+rasa-worker_1      |     headers={'Content-Type': 'application/json'})
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 216, in _request_wrapper
+rasa-worker_1      |     message = self._parse(resp.data)
+rasa-worker_1      |   File "/usr/local/lib/python3.6/site-packages/telegram/utils/request.py", line 174, in _parse
+rasa-worker_1      |     raise RetryAfter(retry_after)
+rasa-worker_1      | telegram.error.RetryAfter: Flood control exceeded. Retry in 1 seconds
+db_1               | 2019-08-11 22:16:49.175 GMT [151] WARNING:  there is no transaction in progress
+db_1               | 2019-08-11 22:16:52.923 GMT [154] WARNING:  there is no transaction in progress
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:17:58 +0000] "GET / HTTP/1.1" 200 1532 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:17:58 +0000] "GET /static/css/2.e9277d57.chunk.css HTTP/1.1" 200 2322 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 2019/08/11 22:17:58 [warn] 11#0: *3 an upstream response is buffered to a temporary file /opt/bitnami/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 177.136.148.42, server: , request: "GET /static/js/2.dd6a06b3.chunk.js HTTP/1.1", upstream: "http://172.18.0.6:5002/static/js/2.dd6a06b3.chunk.js", host: "ec2-18-224-63-139.us-east-2.compute.amazonaws.com", referrer: "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:17:58 +0000] "GET /static/js/main.d26dd834.chunk.js HTTP/1.1" 200 89999 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:17:59 +0000] "GET /static/js/2.dd6a06b3.chunk.js HTTP/1.1" 200 855920 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:00 +0000] "GET /api/features HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:00 +0000] "GET /static/media/rasa_horizontal_logo_white.bf7620f2.svg HTTP/1.1" 200 851 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:00 +0000] "GET /fonts/lato-v14-latin/lato-v14-latin-700.woff2 HTTP/1.1" 200 22840 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:00 +0000] "GET /fonts/lato-v14-latin/lato-v14-latin-regular.woff2 HTTP/1.1" 200 23359 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:01 +0000] "GET /icons/favicon.ico HTTP/1.1" 200 6518 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "POST /api/auth HTTP/1.1" 200 1166 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /static/media/conversations_placeholder.6ff85dae.svg HTTP/1.1" 200 7230 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/conversationActions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/conversationEntities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/conversationPolicies HTTP/1.1" 200 51 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/features HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/conversations?limit=20&offset=0&intent=&entity=&action=&policies=&exclude_self=true HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:05 +0000] "GET /api/conversations/me HTTP/1.1" 200 2719 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:06 +0000] "GET /api/conversationIntents HTTP/1.1" 200 71 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:08 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:08 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:08 +0000] "GET /api/conversations/me HTTP/1.1" 200 2719 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:08 +0000] "GET /fonts/ibm-plex-mono-v4-latin/ibm-plex-mono-v4-latin-regular.woff2 HTTP/1.1" 200 13701 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:11 +0000] "GET /api/conversations/me HTTP/1.1" 200 2719 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:11.917 [info] <0.605.0> accepting AMQP connection <0.605.0> (172.18.0.7:36302 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:11.920 [info] <0.605.0> connection <0.605.0> (172.18.0.7:36302 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:11.936 [info] <0.605.0> closing AMQP connection <0.605.0> (172.18.0.7:36302 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:12.219 [info] <0.618.0> accepting AMQP connection <0.618.0> (172.18.0.7:36312 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:12.222 [info] <0.618.0> connection <0.618.0> (172.18.0.7:36312 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:12.231 [info] <0.618.0> closing AMQP connection <0.618.0> (172.18.0.7:36312 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:12.233 [info] <0.631.0> accepting AMQP connection <0.631.0> (172.18.0.7:36316 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:12.237 [info] <0.631.0> connection <0.631.0> (172.18.0.7:36316 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:12.246 [info] <0.631.0> closing AMQP connection <0.631.0> (172.18.0.7:36316 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:12.263 [info] <0.644.0> accepting AMQP connection <0.644.0> (172.18.0.7:36320 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:12.265 [info] <0.644.0> connection <0.644.0> (172.18.0.7:36320 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:12.270 [info] <0.644.0> closing AMQP connection <0.644.0> (172.18.0.7:36320 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:12 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:14 +0000] "GET /api/conversations/me HTTP/1.1" 200 2773 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:18 +0000] "GET /api/conversations/me HTTP/1.1" 200 2773 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:18.999 [info] <0.657.0> accepting AMQP connection <0.657.0> (172.18.0.7:36334 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:19.003 [info] <0.657.0> connection <0.657.0> (172.18.0.7:36334 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:19.011 [info] <0.657.0> closing AMQP connection <0.657.0> (172.18.0.7:36334 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:19.037 [info] <0.670.0> accepting AMQP connection <0.670.0> (172.18.0.7:36338 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:19.041 [info] <0.670.0> connection <0.670.0> (172.18.0.7:36338 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:19.047 [info] <0.670.0> closing AMQP connection <0.670.0> (172.18.0.7:36338 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:19.051 [info] <0.683.0> accepting AMQP connection <0.683.0> (172.18.0.7:36342 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:19.054 [info] <0.683.0> connection <0.683.0> (172.18.0.7:36342 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:19.060 [info] <0.683.0> closing AMQP connection <0.683.0> (172.18.0.7:36342 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:19.064 [info] <0.696.0> accepting AMQP connection <0.696.0> (172.18.0.7:36346 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:19.067 [info] <0.696.0> connection <0.696.0> (172.18.0.7:36346 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:19.073 [info] <0.696.0> closing AMQP connection <0.696.0> (172.18.0.7:36346 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:19 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 50 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:21 +0000] "GET /api/conversations/me HTTP/1.1" 200 2883 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:24 +0000] "GET /api/conversations/me HTTP/1.1" 200 2883 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:25.329 [info] <0.709.0> accepting AMQP connection <0.709.0> (172.18.0.7:36362 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:25.332 [info] <0.709.0> connection <0.709.0> (172.18.0.7:36362 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:25.336 [info] <0.709.0> closing AMQP connection <0.709.0> (172.18.0.7:36362 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rasa-production_1  | 2019-08-11 22:18:25 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'https://app/webhook'. Is the server running? Error: Cannot connect to host app:443 ssl:None [Connection refused]
+rasa-production_1  | 2019-08-11 22:18:25 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+rabbit_1           | 2019-08-11 22:18:25.370 [info] <0.722.0> accepting AMQP connection <0.722.0> (172.18.0.7:36368 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:25.374 [info] <0.722.0> connection <0.722.0> (172.18.0.7:36368 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:25.381 [info] <0.722.0> closing AMQP connection <0.722.0> (172.18.0.7:36368 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:25.384 [info] <0.735.0> accepting AMQP connection <0.735.0> (172.18.0.7:36372 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:25.386 [info] <0.735.0> connection <0.735.0> (172.18.0.7:36372 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:25.391 [info] <0.735.0> closing AMQP connection <0.735.0> (172.18.0.7:36372 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:25.396 [info] <0.748.0> accepting AMQP connection <0.748.0> (172.18.0.7:36376 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:25.398 [info] <0.748.0> connection <0.748.0> (172.18.0.7:36376 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:25.403 [info] <0.748.0> closing AMQP connection <0.748.0> (172.18.0.7:36376 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:18:25.408 [info] <0.761.0> accepting AMQP connection <0.761.0> (172.18.0.7:36380 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:25.412 [info] <0.761.0> connection <0.761.0> (172.18.0.7:36380 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:25.416 [info] <0.761.0> closing AMQP connection <0.761.0> (172.18.0.7:36380 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:25 +0000] "POST /api/chat?environment=production HTTP/1.1" 200 51 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:27 +0000] "GET /api/conversations/me HTTP/1.1" 200 3018 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:31 +0000] "GET /api/conversations/me HTTP/1.1" 200 3018 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:34 +0000] "GET /api/conversations/me HTTP/1.1" 200 3018 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:36 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:36.124 [info] <0.774.0> accepting AMQP connection <0.774.0> (172.18.0.7:36402 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:36.127 [info] <0.774.0> connection <0.774.0> (172.18.0.7:36402 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:36.131 [info] <0.774.0> closing AMQP connection <0.774.0> (172.18.0.7:36402 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:36 +0000] "POST /api/conversations HTTP/1.1" 201 323 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:36 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1517 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:36 +0000] "GET /static/media/chat_placeholder.634e5dc0.svg HTTP/1.1" 200 9359 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:38 +0000] "POST /api/projects/default/logs?q=hi HTTP/1.1" 200 489 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:40.160 [info] <0.787.0> accepting AMQP connection <0.787.0> (172.18.0.7:36418 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:40.164 [info] <0.787.0> connection <0.787.0> (172.18.0.7:36418 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:40.170 [info] <0.787.0> closing AMQP connection <0.787.0> (172.18.0.7:36418 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:40 +0000] "POST /api/conversations/0ef91e4b6368407fb8295f97d03a2d86/events HTTP/1.1" 200 389 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:40 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:40 +0000] "POST /api/conversations/0ef91e4b6368407fb8295f97d03a2d86/predict HTTP/1.1" 200 680 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:41.939 [info] <0.801.0> accepting AMQP connection <0.801.0> (172.18.0.7:36436 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:41.943 [info] <0.801.0> connection <0.801.0> (172.18.0.7:36436 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:41.951 [info] <0.801.0> closing AMQP connection <0.801.0> (172.18.0.7:36436 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:41 +0000] "POST /api/conversations/0ef91e4b6368407fb8295f97d03a2d86/execute HTTP/1.1" 200 1284 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:53 +0000] "GET /api/conversations/undefined HTTP/1.1" 404 171 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:53.775 [info] <0.814.0> accepting AMQP connection <0.814.0> (172.18.0.7:36450 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:53.778 [info] <0.814.0> connection <0.814.0> (172.18.0.7:36450 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:53.785 [info] <0.814.0> closing AMQP connection <0.814.0> (172.18.0.7:36450 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:53 +0000] "POST /api/conversations HTTP/1.1" 201 323 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:55 +0000] "POST /api/projects/default/logs?q=hi HTTP/1.1" 200 488 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:18:57.744 [info] <0.827.0> accepting AMQP connection <0.827.0> (172.18.0.7:36466 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:18:57.747 [info] <0.827.0> connection <0.827.0> (172.18.0.7:36466 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:18:57.759 [info] <0.827.0> closing AMQP connection <0.827.0> (172.18.0.7:36466 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:57 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/events HTTP/1.1" 200 389 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:58 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:18:58 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/predict HTTP/1.1" 200 678 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:19:06.666 [info] <0.840.0> accepting AMQP connection <0.840.0> (172.18.0.7:36484 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:19:06.669 [info] <0.840.0> connection <0.840.0> (172.18.0.7:36484 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:19:06.676 [info] <0.840.0> closing AMQP connection <0.840.0> (172.18.0.7:36484 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:19:06.682 [info] <0.853.0> accepting AMQP connection <0.853.0> (172.18.0.7:36488 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:19:06.685 [info] <0.853.0> connection <0.853.0> (172.18.0.7:36488 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:19:06.690 [info] <0.853.0> closing AMQP connection <0.853.0> (172.18.0.7:36488 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:06 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/execute HTTP/1.1" 200 553 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:06 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:06 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/predict HTTP/1.1" 200 793 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:19:14.018 [info] <0.866.0> accepting AMQP connection <0.866.0> (172.18.0.7:36504 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:19:14.022 [info] <0.866.0> connection <0.866.0> (172.18.0.7:36504 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:19:14.028 [info] <0.866.0> closing AMQP connection <0.866.0> (172.18.0.7:36504 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:14 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/execute HTTP/1.1" 200 559 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:17 +0000] "POST /api/projects/default/logs?q=bad HTTP/1.1" 200 225 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:19:22.079 [info] <0.879.0> accepting AMQP connection <0.879.0> (172.18.0.7:36522 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:19:22.082 [info] <0.879.0> connection <0.879.0> (172.18.0.7:36522 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:19:22.088 [info] <0.879.0> closing AMQP connection <0.879.0> (172.18.0.7:36522 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:22 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/events HTTP/1.1" 200 124 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:22 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:22 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/predict HTTP/1.1" 200 852 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rasa-production_1  | 2019-08-11 22:19:28 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'https://app/webhook'. Is the server running? Error: Cannot connect to host app:443 ssl:None [Connection refused]
+rasa-production_1  | 2019-08-11 22:19:28 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+rabbit_1           | 2019-08-11 22:19:28.220 [info] <0.892.0> accepting AMQP connection <0.892.0> (172.18.0.7:36540 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:19:28.223 [info] <0.892.0> connection <0.892.0> (172.18.0.7:36540 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:19:28.232 [info] <0.892.0> closing AMQP connection <0.892.0> (172.18.0.7:36540 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:28 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/execute HTTP/1.1" 200 605 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:28 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:19:28 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/predict HTTP/1.1" 200 852 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:36 +0000] "GET / HTTP/1.1" 200 1532 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/conversationIntents HTTP/1.1" 200 71 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/conversationEntities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/conversationActions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/conversationPolicies HTTP/1.1" 200 51 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/conversations?limit=20&offset=0&intent=&entity=&action=&policies=&exclude_self=true HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/conversations/me HTTP/1.1" 200 3018 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:37 +0000] "GET /api/features HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:38 +0000] "GET /static/media/onboarding_maintain.14c39143.svg HTTP/1.1" 200 4327 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:38 +0000] "GET /static/media/onboarding_create.c1ddd659.svg HTTP/1.1" 200 3369 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/conversations" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:39 +0000] "GET /api/environments HTTP/1.1" 200 184 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:39 +0000] "GET /api/conversations/me HTTP/1.1" 200 3018 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:39 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:43 +0000] "GET /api/conversations/me HTTP/1.1" 200 3018 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:44 +0000] "GET /api/projects/default/entities HTTP/1.1" 200 2 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:26:44.270 [info] <0.922.0> accepting AMQP connection <0.922.0> (172.18.0.7:36764 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:26:44.273 [info] <0.922.0> connection <0.922.0> (172.18.0.7:36764 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:26:44.282 [info] <0.922.0> closing AMQP connection <0.922.0> (172.18.0.7:36764 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:44 +0000] "GET /api/projects/default/intents HTTP/1.1" 200 1517 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:44 +0000] "POST /api/conversations HTTP/1.1" 201 322 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:47 +0000] "POST /api/projects/default/logs?q=hi HTTP/1.1" 200 487 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:26:48.861 [info] <0.935.0> accepting AMQP connection <0.935.0> (172.18.0.7:36780 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:26:48.865 [info] <0.935.0> connection <0.935.0> (172.18.0.7:36780 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:26:48.882 [info] <0.935.0> closing AMQP connection <0.935.0> (172.18.0.7:36780 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:48 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/events HTTP/1.1" 200 389 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:49 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:49 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/predict HTTP/1.1" 200 677 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:26:55.105 [info] <0.948.0> accepting AMQP connection <0.948.0> (172.18.0.7:36796 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:26:55.108 [info] <0.948.0> connection <0.948.0> (172.18.0.7:36796 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:26:55.112 [info] <0.948.0> closing AMQP connection <0.948.0> (172.18.0.7:36796 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:26:55.117 [info] <0.961.0> accepting AMQP connection <0.961.0> (172.18.0.7:36800 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:26:55.121 [info] <0.961.0> connection <0.961.0> (172.18.0.7:36800 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:26:55.126 [info] <0.961.0> closing AMQP connection <0.961.0> (172.18.0.7:36800 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:55 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/execute HTTP/1.1" 200 556 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:55 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:26:55 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/predict HTTP/1.1" 200 794 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:27:05.080 [info] <0.974.0> accepting AMQP connection <0.974.0> (172.18.0.7:36818 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:27:05.083 [info] <0.974.0> connection <0.974.0> (172.18.0.7:36818 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:27:05.090 [info] <0.974.0> closing AMQP connection <0.974.0> (172.18.0.7:36818 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:27:05 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/execute HTTP/1.1" 200 561 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:27:08 +0000] "POST /api/projects/default/logs?q=sad HTTP/1.1" 200 497 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:27:10.240 [info] <0.987.0> accepting AMQP connection <0.987.0> (172.18.0.7:36834 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:27:10.243 [info] <0.987.0> connection <0.987.0> (172.18.0.7:36834 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:27:10.252 [info] <0.987.0> closing AMQP connection <0.987.0> (172.18.0.7:36834 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:27:10 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/events HTTP/1.1" 200 397 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:27:10 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:27:10 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/predict HTTP/1.1" 200 901 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:27:13.431 [info] <0.1000.0> accepting AMQP connection <0.1000.0> (172.18.0.7:36850 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:27:13.434 [info] <0.1000.0> connection <0.1000.0> (172.18.0.7:36850 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:27:13.440 [info] <0.1000.0> closing AMQP connection <0.1000.0> (172.18.0.7:36850 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:27:13 +0000] "POST /api/conversations/09e18d1d844a47589a2b923d3d1945fe/execute HTTP/1.1" 200 661 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rabbit_1           | 2019-08-11 22:31:19.861 [info] <0.1016.0> accepting AMQP connection <0.1016.0> (172.18.0.7:36956 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:31:19.864 [info] <0.1016.0> connection <0.1016.0> (172.18.0.7:36956 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:31:19.873 [info] <0.1016.0> closing AMQP connection <0.1016.0> (172.18.0.7:36956 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+rabbit_1           | 2019-08-11 22:31:19.875 [info] <0.1029.0> accepting AMQP connection <0.1029.0> (172.18.0.7:36960 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:31:19.879 [info] <0.1029.0> connection <0.1029.0> (172.18.0.7:36960 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:31:19.888 [info] <0.1029.0> closing AMQP connection <0.1029.0> (172.18.0.7:36960 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:31:19 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/execute HTTP/1.1" 200 681 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:31:20 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/predict HTTP/1.1" 200 917 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:31:20 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rasa-production_1  | 2019-08-11 22:31:26 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_joke'. Couldn't connect to the server at 'https://app/webhook'. Is the server running? Error: Cannot connect to host app:443 ssl:None [Connection refused]
+rasa-production_1  | 2019-08-11 22:31:26 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+rabbit_1           | 2019-08-11 22:31:26.367 [info] <0.1042.0> accepting AMQP connection <0.1042.0> (172.18.0.7:36980 -> 172.18.0.3:5672)
+rabbit_1           | 2019-08-11 22:31:26.370 [info] <0.1042.0> connection <0.1042.0> (172.18.0.7:36980 -> 172.18.0.3:5672): user 'user' authenticated and granted access to vhost '/'
+rabbit_1           | 2019-08-11 22:31:26.377 [info] <0.1042.0> closing AMQP connection <0.1042.0> (172.18.0.7:36980 -> 172.18.0.3:5672, vhost: '/', user: 'user')
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:31:26 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/execute HTTP/1.1" 200 677 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:31:26 +0000] "GET /api/projects/default/actions HTTP/1.1" 200 98 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+nginx_1            | 177.136.148.42 - - [11/Aug/2019:22:31:26 +0000] "POST /api/conversations/a329d5f6e181433a908a7ae60ff89e30/predict HTTP/1.1" 200 926 "http://ec2-18-224-63-139.us-east-2.compute.amazonaws.com/talk/strict" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+rasa-worker_1      | [92mStarting Rasa X in production mode... 🚀[0m
+rasa_rasa-worker_1 exited with code 0
+rasa_rasa-worker_1 exited with code 0
